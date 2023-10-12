@@ -1,0 +1,461 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+:root{
+    --imagem1: url("../images/ferrari2.png");
+    --imagem2: url("../images/ferrari3.png");
+    --imagem3: url("../images/ferrari4.png"); 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+    font-style: italic;
+}
+html, body{
+    height: 100%;
+}
+
+/* Uteis */
+div.container{
+    width: 90%;
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+div.clear{
+    clear: both;
+}
+.red_button{
+    padding: 5px 15px;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    background-color: #EB2B2B;
+    box-shadow: 2px 2px 2px #B21E1E;
+}
+h2.titulo{
+    width: 28%;
+    height: 40px;
+    font-size: 28px;
+    font-weight: 400;
+    text-align: center;
+    margin: auto;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+}
+div.line{
+    height: 2px;
+    background-color: black;
+    width: 100%;
+    position: relative;
+    top: 25px;
+}
+
+/* Header */
+header{
+    padding: 20px 2% 35px 2%;
+    height: 130px;
+}
+/* Header Logo */
+header picture#logo{
+    float: left;
+}
+/* Header Menu */
+header nav#menu_desktop{
+    float: right;
+    position: relative;
+    top: 40px;
+}
+/* Header Menu desktop */
+header nav#menu_desktop ul{
+    list-style-type: none;
+}
+header nav#menu_desktop ul li{
+    float: left;
+    padding: 0 20px;
+}
+/* Header Menu desktop Texto */
+header nav#menu_desktop ul li a{
+    font-size: 23px;
+    color: black;
+    text-decoration: none;
+}
+/* Header Menu mobile */
+header nav#menu_mobile{
+    display: none;
+    float: right;
+    width: 32px;
+    height: 32px;
+    margin-top: 40px;
+    cursor: pointer;
+    background-image: url("../images/icon_menu.png");
+    background-size: 100% 100%;
+}
+/* Header Menu mobile */
+header nav#menu_mobile ul{
+    display: none;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 130px;
+    z-index: 1;
+    text-align: center;
+    background-color: rgb(189, 189, 189);
+    list-style-type: none;
+    border-bottom: 2px solid #EB2B2B;
+}
+header nav#menu_mobile ul li{
+    padding: 20px 0;
+    font-size: 23px;
+    border-bottom: 1px solid #313131;
+}
+header nav#menu_mobile ul li:hover{
+    background-color: rgb(110, 110, 110);
+}
+/* Header Menu mobile Texto */
+header nav#menu_mobile ul li a{
+    font-size: 23px;
+    color: black;
+    text-decoration: none;
+}
+
+/* Section venda */
+section#venda{
+    width: 100%;
+}
+section#venda div.container + div.container{
+    padding: 40px 2% 350px 2%;
+}
+section#venda div.container  div.line{
+    margin-top: 80px;
+}
+section#venda div#fotos_veiculo{
+    float: left;
+    width: 60%;
+    height: 500px;
+}
+section#venda div#fotos_veiculo div#nav_galeria{
+    width: 100%;
+    height: 100%;
+}
+section#venda div#fotos_veiculo div#nav_galeria div.mosi{
+    width: 33.3%;
+    margin-top: 400px;
+    height: 130px;
+    float: left;
+    border: 5px solid rgb(173, 173, 173);
+    
+}
+#img1{
+    background-image: var(--imagem1);
+}
+#img2{
+    background-image: var(--imagem2);
+}
+#img3{
+    background-image: var(--imagem3);
+}
+#foto_destaque{
+    background-image: url("../images/ferrari.png");
+}
+section#venda div#fotos_veiculo div#nav_galeria div.img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+section#venda div#fotos_veiculo div#nav_galeria div.ft_destaque{
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 671px;
+    min-height: 400px;
+}
+
+section#venda div#descricao_veiculo{
+    float: right;
+    padding: 5% 50px;
+    width: 40%;
+    height: 100%;
+}
+section#venda div#descricao_veiculo ul{
+    padding: 50px 0 20px 0;
+}
+
+/* Section veiculo_destaque */
+section#veiculos_destaque{
+    padding: 90px 2%;
+    height: 100%;
+}
+section#veiculos_destaque div.container{
+    max-width: 800px;
+}
+/* section Veiculos_destaque carros_vitrine */
+section#veiculos_destaque div.carros_vitrine{
+    width: 33.3%;
+    height: 200px;
+    margin: 60px 0;
+    float: left;
+    border: 5px solid white;
+}
+section#veiculos_destaque div.img_carro{
+    width: 100%;
+    padding-top: 100%;
+    background-image: url("../images/carro1.jpg");
+    background-size: 100% 100%;
+}
+section#veiculos_destaque div.info_carro{
+    padding: 20px 0;
+}
+section#veiculos_destaque div.info_carro h2{
+    font-size: 20px;
+    width: 100%;
+    height: 28px;
+    text-align: left;
+    font-style: normal;
+}
+section#veiculos_destaque div.info_carro p{
+    font-size: 15px;
+    width: 100%;
+    font-style: normal;
+    margin-bottom: 10px;
+}
+
+/* Section Formulario */
+section#formulario{
+    margin-top: 50px;
+}
+section#formulario div.container{
+    width: 80%;
+}
+/* Section Formulario Título */
+section#formulario h2{
+    width: 35%;
+    height: 40px;
+    font-size: 28px;
+    font-weight: 400;
+    text-align: center;
+    margin: auto;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+}
+section#formulario div#line{
+    height: 2px;
+    background-color: black;
+    width: 100%;
+    position: relative;
+    top: 25px;
+}
+/* Section Formulário inputs */
+section#formulario input[type=text], section#formulario textarea{
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    margin-top: 30px;
+    padding: 5px 10px;
+    border: 1px solid #CCC;
+}
+section#formulario div#infos_pessoais{
+    font-size: 20px;
+    display: flex;
+}
+section#formulario div#infos_pessoais input.infos_dados{
+    width: 50%;
+    height: 50px;
+    font-size: 20px;
+    margin-top: 15px;
+    padding: 5px 10px;
+    border: 1px solid #CCC;
+}
+section#formulario div#infos_pessoais input[type=tel]{
+    margin-left: 5%;
+}
+section#formulario textarea{
+    min-height: 100px;
+    max-height: 100px;
+    resize: none;
+}
+section#formulario div#form_button{
+    text-align: center;
+}
+section#formulario input[type=submit]{
+    border: none;
+    margin: auto;
+    display: inline-block;
+    padding: 3px 50px;
+}
+
+/* Footer */
+footer{
+    margin-top: 40px;
+    padding: 40px 2%;
+    background-color: #252525;
+}
+footer nav{
+    float: left;
+}
+/* footer Menu desktop */
+footer nav ul{
+    list-style-type: none;
+}
+footer nav ul li{
+    float: left;
+    padding: 0 20px;
+}
+/* footer Menu desktop Texto */
+footer nav ul li a{
+    font-size: 23px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+footer p{
+    float: right;
+    color: white;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 1400px){
+    /* Section Banner */
+    section#banner{
+        background-size: 90% auto;
+        background-position: 200% 100%;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    /* Section Banner */
+    section#banner{
+        background-size: cover;
+        background-position: center;
+        height: 70vw;
+        min-height: 500px;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    section#servicos_descricao  a{
+        margin-top: 15px;
+        margin-left: 0;
+        display: block;
+        max-width: 110px;
+
+    }
+}
+
+@media screen and (max-width: 720px){
+    /* Header Menu desktop */
+    header nav#menu_desktop{
+        display: none;
+    }
+    /* Header Menu mobile */
+    header nav#menu_mobile{
+        display: block;
+    }
+
+    section#veiculos_destaque div.carros_vitrine{
+        width: 80%;
+        margin: 40px auto 500px auto;
+    }
+    section#veiculos_destaque div.img_carro{
+        width: 100%;
+    }
+
+    section#servicos_descricao{
+        flex-direction: column;
+    }
+    section#servicos_descricao article.infos{
+        width: 100%;
+    }
+
+    section#formulario form{
+        margin-top: 50px;
+    }
+    section#formulario div#infos_pessoais{
+        display: block;
+    }
+    section#formulario div#infos_pessoais input.infos_dados{
+        width: 100%;
+    }
+    section#formulario div#infos_pessoais input[type=tel]{
+        margin-left: 0;
+    }
+
+    footer{
+        text-align: center;
+    }
+    footer nav{
+        display: none;
+    }
+    footer p{
+        float: none;
+    }
+
+}
+
+
+@media screen and (max-width: 580px){
+    /* Section Banner Texto */
+    section#banner div#text_banner{
+        padding: 30px;
+    }
+    section#banner div.text_banner_single{
+        font-size: 18px;
+        width: 140px;
+        height: 50px;
+    }
+    section#banner div.text_banner_single:nth-of-type(2){
+        width: 120px;
+        left: -5px;
+    }
+    section#banner div.text_banner_single:nth-of-type(3){
+        width: 110px;
+        left: -10px;
+    }
+    section#banner div.text_banner_single:nth-of-type(4){
+        width: 228px;
+        height: 40px;
+        left: -15px;
+        font-size: 13px;
+    }
+
+    /* Section veiculo_destaque Texto e linhas*/
+    section#veiculos_destaque div#line{
+        top:50px;
+    }
+    section#veiculos_destaque h2{
+        height: 80px; 
+    }
+    section#veiculos_destaque div.carros_vitrine{
+        margin: 40px auto 400px auto;
+    }
+}
+@media screen and (max-width: 1100px){
+
+    section#venda div#fotos_veiculo{
+        margin: 0 auto 10px auto;
+        float: none;
+        width: 80%;
+        height: 80%;
+    }
+    section#venda div#descricao_veiculo{
+        float: none;
+        padding: 50px;
+        width: 100%;
+    }
+    section#venda div.container{
+        padding: 40px 0;
+    }
+    section#venda div.container + div.container{
+        padding: 0;
+    }
+
+    section#formulario {
+        margin: 0 auto;
+    }
+       
+}

@@ -1,0 +1,360 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+    font-style: italic;
+}
+html, body{
+    height: 100%;
+}
+
+/* Uteis */
+div.container{
+    width: 90%;
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+div.clear{
+    clear: both;
+}
+.red_button{
+    padding: 5px 15px;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    background-color: #EB2B2B;
+    box-shadow: 2px 2px 2px #B21E1E;
+}
+h2.titulo{
+    width: 28%;
+    height: 40px;
+    font-size: 28px;
+    font-weight: 400;
+    text-align: center;
+    margin: auto;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+}
+div.line{
+    height: 2px;
+    background-color: black;
+    width: 100%;
+    position: relative;
+    top: 25px;
+}
+
+/* Header */
+header{
+    padding: 20px 2% 35px 2%;
+    height: 130px;
+}
+/* Header Logo */
+header picture#logo{
+    float: left;
+}
+/* Header Menu */
+header nav#menu_desktop{
+    float: right;
+    position: relative;
+    top: 40px;
+}
+/* Header Menu desktop */
+header nav#menu_desktop ul{
+    list-style-type: none;
+}
+header nav#menu_desktop ul li{
+    float: left;
+    padding: 0 20px;
+}
+/* Header Menu desktop Texto */
+header nav#menu_desktop ul li a{
+    font-size: 23px;
+    color: black;
+    text-decoration: none;
+}
+/* Header Menu mobile */
+header nav#menu_mobile{
+    display: none;
+    float: right;
+    width: 32px;
+    height: 32px;
+    margin-top: 40px;
+    cursor: pointer;
+    background-image: url("../images/icon_menu.png");
+    background-size: 100% 100%;
+}
+/* Header Menu mobile */
+header nav#menu_mobile ul{
+    display: none;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 130px;
+    z-index: 1;
+    text-align: center;
+    background-color: rgb(189, 189, 189);
+    list-style-type: none;
+    border-bottom: 2px solid #EB2B2B;
+}
+header nav#menu_mobile ul li{
+    padding: 20px 0;
+    font-size: 23px;
+    border-bottom: 1px solid #313131;
+}
+header nav#menu_mobile ul li:hover{
+    background-color: rgb(110, 110, 110);
+}
+/* Header Menu mobile Texto */
+header nav#menu_mobile ul li a{
+    font-size: 23px;
+    color: black;
+    text-decoration: none;
+}
+
+/* Main Venda */
+main#venda{
+    min-height: 100%;
+    padding: 90px 0;
+}   
+main#venda section#content_venta{
+    margin-top: 40px;
+}
+main#venda section#content_venta div#side_bar{
+    float: left;
+    width: 30%;
+}
+main#venda section#content_venta div#side_bar h2{
+    font-size: 24px;
+    color: black;
+    font-weight: normal;
+}
+main#venda section#content_venta div#search1{
+    width: 90%;
+}
+main#venda section#content_venta div#search1 div#barra_preco{
+    width: 100%;
+    height: 20px;
+    margin-top: 8px;
+    position: relative;
+    border: 1px solid #CCC;
+    border-radius: 20px;
+}
+main#venda section#content_venta div#search1 div#barra_preco div#barra_preco_fill{
+    width: 0;
+    height: 20px;
+    background: linear-gradient(to bottom, white, rgb(200, 200, 200));
+    border-radius: 20px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+main#venda section#content_venta div#search1 div#barra_preco div#pointer_barra{
+    width: 25px;
+    height: 25px;
+    background: linear-gradient(to bottom, white, rgb(100, 100, 100));
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 25px;
+    position: absolute;
+    left: 0px;
+    top: -3px;
+}
+main#venda section#content_venta div#search1 div#valor_pesquisa{
+    margin-top: 10px;
+}
+main#venda section#content_venta div#search1 div#valor_pesquisa p{
+    font-size: 14px;
+    color: black;
+}
+main#venda section#content_venta div#search1 div#valor_pesquisa p:nth-of-type(1){
+    float: left;
+}
+main#venda section#content_venta div#search1 div#valor_pesquisa p:nth-of-type(2){
+    float: right;
+}
+/* Search2*/
+main#venda section#content_venta div#search2{
+    margin-top: 40px;
+}
+main#venda section#content_venta div#search2 h2{
+    font-size: 24px;
+    color: black;
+    font-weight: normal;
+}
+main#venda section#content_venta div#search2 div.form_wraper{
+    margin-top: 10px;
+}
+main#venda section#content_venta div#search2 div.form_wraper input{
+    display: none;
+}
+main#venda section#content_venta div#search2 div.form_wraper div.check{
+    width: 20px;
+    height: 20px;
+    border: 1px solid #CCC;
+    border-radius: 4px;
+    display: inline-block;
+}
+main#venda section#content_venta div#search2 div.form_wraper div.circle{
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    background-color: #242424;
+    position: relative;
+    top: 5px;
+    left: 5px;
+    display: none;
+}
+main#venda section#content_venta div#search2 div.form_wraper input:checked + div.check div.circle{
+    display: block;
+}
+main#venda section#content_venta div#search2 div.form_wraper span{
+    margin-left: 5px;
+}
+
+/* Vitrine venda */
+main#venda section#vitrine_venda{
+    float: left;
+    width: 70%;
+    margin-top: -45px;
+}
+/* section Veiculos_destaque carros_vitrine */
+main#venda section#vitrine_venda div.carros_vitrine{
+    width: 33.3%;
+    height: 280px;
+    margin: 50px 0;
+    float: left;
+    border: 5px solid white;
+}
+main#venda section#vitrine_venda div.img_carro{
+    width: 100%;
+    padding-top: 100%;
+    background-image: url("../images/carro1.jpg");
+    background-size: 100% 100%;
+}
+main#venda section#vitrine_venda div.info_carro{
+    padding: 20px 0;
+}
+main#venda section#vitrine_venda div.info_carro h2{
+    font-size: 20px;
+    width: 100%;
+    height: 28px;
+    text-align: left;
+    font-style: normal;
+}
+main#venda section#vitrine_venda div.info_carro p{
+    font-size: 15px;
+    width: 100%;
+    font-style: normal;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer{
+    margin-top: 40px;
+    padding: 40px 2%;
+    background-color: #252525;
+}
+footer nav{
+    float: left;
+}
+/* footer Menu desktop */
+footer nav ul{
+    list-style-type: none;
+}
+footer nav ul li{
+    float: left;
+    padding: 0 20px;
+}
+/* footer Menu desktop Texto */
+footer nav ul li a{
+    font-size: 23px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+footer p{
+    float: right;
+    color: white;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 900px){   
+    main#venda section#content_venta div#side_bar{
+        float: none;
+        width: 100%;
+        margin: 20px;
+    }
+    main#venda section#content_venta div#side_bar div#search1{
+        width: 50%;
+        float: right;
+    }
+    main#venda section#content_venta div#side_bar div#search2{
+        float: left;
+        width: 50%;
+        margin-top: 0;
+    }
+    main#venda section#vitrine_venda{
+        float: left;
+        width: 100%;
+        text-align: center;
+        margin-top: 0;
+    }
+    main#venda section#vitrine_venda div.carros_vitrine div.info_carro{
+        text-align: left;
+    }
+    
+}
+
+@media screen and (max-width: 760px){
+    /* Header Menu desktop */
+    header nav#menu_desktop{
+        display: none;
+    }
+    /* Header Menu mobile */
+    header nav#menu_mobile{
+        display: block;
+    }
+
+    footer{
+        text-align: center;
+    }
+    footer nav{
+        display: none;
+    }
+    footer p{
+        float: none;
+    }
+
+    main#venda section#vitrine_venda div.carros_vitrine{
+        width: 100%;
+        margin: 100px auto 400px auto;
+    }
+    main#venda section#vitrine_venda div.carros_vitrine div.info_carro h2{
+        text-align: center;
+    }
+    main#venda section#vitrine_venda div.carros_vitrine div.info_carro{
+        text-align: center;
+    }
+    main#venda section#vitrine_venda div.img_carro{
+        width: 100%;
+    }
+
+    main#venda section#vitrine_venda{
+        flex-direction: column;
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 600px){
+    main#venda section#vitrine_venda div.carros_vitrine{
+        margin: 100px auto 240px auto;
+    }
+
+    h2.titulo{
+        width: 32%;
+    }
+}

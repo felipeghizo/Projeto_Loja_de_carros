@@ -1,0 +1,228 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+    font-style: italic;
+}
+html, body{
+    height: 100%;
+}
+
+/* Uteis */
+div.container{
+    width: 90%;
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+div.clear{
+    clear: both;
+}
+.red_button{
+    padding: 5px 15px;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    background-color: #EB2B2B;
+    box-shadow: 2px 2px 2px #B21E1E;
+}
+h2.titulo{
+    width: 28%;
+    height: 40px;
+    font-size: 28px;
+    font-weight: 400;
+    text-align: center;
+    margin: auto;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+}
+div.line{
+    height: 2px;
+    background-color: black;
+    width: 100%;
+    position: relative;
+    top: 25px;
+}
+
+/* Header */
+header{
+    padding: 20px 2% 35px 2%;
+    height: 130px;
+}
+/* Header Logo */
+header picture#logo{
+    float: left;
+}
+/* Header Menu */
+header nav#menu_desktop{
+    float: right;
+    position: relative;
+    top: 40px;
+}
+/* Header Menu desktop */
+header nav#menu_desktop ul{
+    list-style-type: none;
+}
+header nav#menu_desktop ul li{
+    float: left;
+    padding: 0 20px;
+}
+/* Header Menu desktop Texto */
+header nav#menu_desktop ul li a{
+    font-size: 23px;
+    color: black;
+    text-decoration: none;
+}
+
+/* Header Menu mobile */
+header nav#menu_mobile{
+    display: none;
+    float: right;
+    width: 32px;
+    height: 32px;
+    margin-top: 40px;
+    cursor: pointer;
+    background-image: url("../images/icon_menu.png");
+    background-size: 100% 100%;
+}
+/* Header Menu mobile */
+header nav#menu_mobile ul{
+    display: none;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 130px;
+    z-index: 1;
+    text-align: center;
+    background-color: rgb(189, 189, 189);
+    list-style-type: none;
+    border-bottom: 2px solid #EB2B2B;
+}
+header nav#menu_mobile ul li{
+    padding: 20px 0;
+    font-size: 23px;
+    border-bottom: 1px solid #313131;
+}
+header nav#menu_mobile ul li:hover{
+    background-color: rgb(110, 110, 110);
+}
+/* Header Menu mobile Texto */
+header nav#menu_mobile ul li a{
+    font-size: 23px;
+    color: black;
+    text-decoration: none;
+}
+
+/* Section Sobre */
+section#sobre{
+    min-height: 90%;
+    padding: 40px 2%;
+}
+section#sobre div#container_main{
+    width: 60%;
+    height: 100%;
+    max-width: 800px;
+    margin: 40px auto;
+    text-align: center;
+}
+section#sobre div#container_main div#ft_principal img{
+    width: 100%;
+    height: 100%;
+    max-width: 1000px; 
+}
+section#sobre div#container_main div#content{
+    text-align: left;
+}
+section#sobre div#container_main div#content h2{
+    padding-top: 20px;
+}
+section#sobre div#container_main div#content p{
+    text-align: justify;
+    width: 100%;
+    padding-top: 10px;
+}
+section#sobre div#container_main div#person_content{
+    max-height: 1000px;
+    text-align: left;
+    margin-top: 40px; 
+}
+section#sobre div#container_main div#person_content img{
+    max-width: 20%; 
+    float: left;
+    min-width: 100px;
+}
+section#sobre div#container_main div#person_content p{
+    width: 80%;
+    float: left;
+    padding-left: 40px; 
+}
+
+
+/* Footer */
+footer{
+    margin-top: 40px;
+    padding: 40px 2%;
+    background-color: #252525;
+}
+footer nav{
+    float: left;
+}
+/* footer Menu desktop */
+footer nav ul{
+    list-style-type: none;
+}
+footer nav ul li{
+    float: left;
+    padding: 0 20px;
+}
+/* footer Menu desktop Texto */
+footer nav ul li a{
+    font-size: 23px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+footer p{
+    float: right;
+    color: white;
+    font-size: 20px;
+}
+
+
+@media screen and (max-width: 720px){
+    /* Header Menu desktop */
+    header nav#menu_desktop{
+        display: none;
+    }
+    /* Header Menu mobile */
+    header nav#menu_mobile{
+        display: block;
+    }
+
+    footer{
+        text-align: center;
+    }
+    footer nav{
+        display: none;
+    }
+    footer p{
+        float: none;
+    }
+
+}
+
+
+@media screen and (max-width: 900px){
+    section#sobre div#container_main div#person_content img{
+        max-width: 100%; 
+        float: none;
+    }
+    section#sobre div#container_main div#person_content p{
+        width: 100%;
+        padding: 20px 0;
+        float: none;
+    }
+}
